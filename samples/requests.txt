@@ -1,0 +1,4 @@
+Allow inbound HTTPS from Internet to WebSubnet on port 443 in dev
+Allow outbound SQL from AppSubnet to DBSubnet on port 1433 in dev
+Deny inbound SSH from Internet to WebSubnet on port 22 in dev
+Allow inbound HTTP from Internet to WebSubnet on port 80 in dev

@@ -1,0 +1,16 @@
+{
+  "rules": [
+    {
+      "rule_name": "Allow-Inbound-Internet-to-WebSubnet-Port-443",
+      "direction": "Inbound",
+      "priority": 100,
+      "access": "Allow",
+      "protocol": "Tcp",
+      "source_address_prefix": "Internet",
+      "source_port_range": "*",
+      "destination_address_prefix": "WebSubnet",
+      "destination_port_range": "443",
+      "description": "Allow inbound HTTPS from Internet to WebSubnet on port 443 in dev"
+    }
+  ]
+}
