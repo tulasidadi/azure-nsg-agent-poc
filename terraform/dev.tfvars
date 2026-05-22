@@ -6,5 +6,5 @@ environment         = "dev"
 # NSG configuration
 nsg_name = "dev-web-nsg"
 
-# Add other required variables based on your terraform/main.tf
-# definitions (e.g., network_name, subnet_name, etc.)
+# NSG rules file path
+rules_file = "../nsg-rules/dev/web-nsg.json"
