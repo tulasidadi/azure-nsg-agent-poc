@@ -1,4 +1,3 @@
-resource_group_name = "test_rg"
-nsg_name            = "web-nsg"
-location            = "eastus"
+nsg_name           = "dev-web-nsg"
+resource_group_name = "dev-rg"
 rules_file          = "../nsg-rules/dev/web-nsg.json"
