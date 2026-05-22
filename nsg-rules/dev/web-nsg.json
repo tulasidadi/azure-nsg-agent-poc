@@ -3,7 +3,7 @@
     {
       "rule_name": "Allow-Inbound-Internet-to-WebSubnet-Port-443",
       "direction": "Inbound",
-      "priority": 100,
+      "priority": 1101,
       "access": "Allow",
       "protocol": "Tcp",
       "source_address_prefix": "Internet",
@@ -11,6 +11,18 @@
       "destination_address_prefix": "WebSubnet",
       "destination_port_range": "443",
       "description": "Allow inbound HTTPS from Internet to WebSubnet on port 443 in dev"
+    },
+    {
+      "rule_name": "Allow-Outbound-DBSubnet-to---Port-1433",
+      "direction": "Outbound",
+      "priority": 1433,
+      "access": "Allow",
+      "protocol": "Tcp",
+      "source_address_prefix": "DBSubnet",
+      "source_port_range": "*",
+      "destination_address_prefix": "*",
+      "destination_port_range": "1433",
+      "description": "Allow outbound SQL from AppSubnet to DBSubnet on port 1433 in dev"
     }
   ]
 }
