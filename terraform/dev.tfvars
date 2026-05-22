@@ -1,5 +1,5 @@
 # Azure subscription and resource group configuration
-resource_group_name = "my-resource-group"
+resource_group_name = "test_rg"
 location            = "eastus"
 environment         = "dev"
 
