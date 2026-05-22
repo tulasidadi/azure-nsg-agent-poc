@@ -1,14 +1,15 @@
-variable "resource_group_name" {
+variable "rules_file" {
+  description = "Path to NSG rules JSON file"
   type        = string
-  description = "Azure resource group containing the NSG."
+  default     = "../nsg-rules/dev/web-nsg.json"
 }
 
 variable "nsg_name" {
+  description = "Name of the Network Security Group"
   type        = string
-  description = "Target Azure Network Security Group name."
 }
 
-variable "rules_file" {
+variable "resource_group_name" {
+  description = "Name of the Azure resource group"
   type        = string
-  description = "Path to JSON rules file."
 }
